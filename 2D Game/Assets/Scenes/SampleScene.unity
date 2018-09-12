@@ -280,8 +280,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1309535314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.91, y: -6.73, z: 0}
-  m_LocalScale: {x: 150, y: 1.0341426, z: 10}
+  m_LocalPosition: {x: -5.91, y: -6.715, z: 0}
+  m_LocalScale: {x: 150, y: 1.2157345, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 1393811975}
   - component: {fileID: 1393811974}
   - component: {fileID: 1393811973}
+  - component: {fileID: 1393811977}
   m_Layer: 0
   m_Name: PC
   m_TagString: Untagged
@@ -407,3 +408,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1393811977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1393811972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8d1ad088de6435197f70367ff112e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 0
+  JumpHeight: 0
+  groundCheck: {fileID: 0}
+  groundCheckRadius: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  grounded: 0
