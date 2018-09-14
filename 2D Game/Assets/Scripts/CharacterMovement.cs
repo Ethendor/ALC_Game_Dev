@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
 
     // Player Movement Variable
-    public int MoveSpeed;
+    public float MoveSpeed;
     public float JumpHeight;
 
     // Player Grounded Variables
