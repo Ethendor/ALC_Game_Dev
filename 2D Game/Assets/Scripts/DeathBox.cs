@@ -8,7 +8,7 @@ public class DeathBox : MonoBehaviour {
 		 
         if(other.name == "PC")
         {
-            Debug.Log("Player Enters Death Zoe");
+            Debug.Log("Player Enters Death Zone");
             Destroy(other);
         }
 
