@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour {
 
     public float respawnDelay;
 
-    // Point Peanalty for Death
+    // Point Penalty for Death
 
     public int pointPenaltyOnDeath;
 
@@ -35,9 +35,9 @@ public class LevelManager : MonoBehaviour {
 
     public IEnumerator RespawnPlayerCo(){
         // Generate Death Particle
-        Instantiate(deathParticle, pc.transform.position, pc.transfrom.rotation);
+        Instantiate(deathParticle, pc.transform.position, pc.transform.rotation);
         // Hide Player
-        pc.enabled = false;
+      //  pc.enabled = false;
         pc.GetComponent<Renderer>().enabled = false;
         // Gravity Reset
         gravityStore = pc.GetComponent<Rigidbody2D>().gravityScale;
@@ -48,6 +48,16 @@ public class LevelManager : MonoBehaviour {
         // Debug Message
         Debug.Log("Player Respawn");
         // Respawn Delay
-        yield return new WaitForSeconds 
+        yield return new WaitForSeconds(respawnDelay);
+        // Gravity Restore
+        pc.GetComponent<Rigidbody2D>().gravityScale = gravityStore;
+        // Match Players transform position
+        pc.transform.position = currentCheckPoint.transform.position;
+        // Show Player
+      // pc.enabled = true;
+        pc.GetComponent<Renderer>().enabled = true;
+
+        //Spawn PC
+        Instantiate(respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
     }
 }
