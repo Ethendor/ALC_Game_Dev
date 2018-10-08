@@ -4,7 +4,7 @@ using System.Collections;
 
 public class DeathBox : MonoBehaviour {
 
-	private void OnTriggerEnter2D(Collider2D other){
+	private void OnTriggerEnter2D(GameObject other){
 		 
         if(other.name == "PC")
         {
