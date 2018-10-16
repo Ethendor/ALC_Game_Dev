@@ -16,6 +16,9 @@ public class Projectile : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         // PC = FindObjectOfType<Rigidbody2D>();
+        
+        if (PC.transform.localScale.x < 0)
+            Speed = -Speed;
 
 
 	}
@@ -24,8 +27,7 @@ public class Projectile : MonoBehaviour {
 	void Update () {
         GetComponent<Rigidbody2D>().velocity = new Vector2(Speed, GetComponent<Rigidbody2D>().velocity.y);
 
-        if (PC.transform.localScale.x < 0)
-            Speed = -Speed;
+        
 
 	}
 
