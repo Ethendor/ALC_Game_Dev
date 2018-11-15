@@ -19,8 +19,8 @@ public class Projectile : MonoBehaviour {
         // PC = FindObjectOfType<Rigidbody2D>();
         PC = GameObject.Find("PC");
             
-        EnemyDeath = Resources.Load("Prefabs/Enemy Death Particle") as GameObject;
-        ProjectileParticle = Resources.Load("Prefabs/Projectile Particle") as GameObject;
+        EnemyDeath = Resources.Load("Prefabs/EnemyDeathParticle") as GameObject;
+        ProjectileParticle = Resources.Load("Prefabs/ProjectileParticle") as GameObject;
         
         if (PC.transform.localScale.x < 0)
             Speed = -Speed;
