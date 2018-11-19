@@ -38,7 +38,7 @@ public class LevelManager : MonoBehaviour {
 
     public IEnumerator RespawnPlayerCo(){
         // Generate Death Particle
-        Instantiate(deathParticle, pc.transform.position, pc.transform.rotation);
+        Instantiate(Resources.Load("Prefabs/DeathParticle") as GameObject, pc.transform.position, pc.transform.rotation);
         // Hide Player
         //  pc.enabled = false;
         pc2.SetActive(false);
@@ -63,6 +63,6 @@ public class LevelManager : MonoBehaviour {
         pc.GetComponent<Renderer>().enabled = true;
 
         //Spawn PC
-        Instantiate(respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
+        Instantiate(Resources.Load("Prefabs/RespawnParticle") as GameObject, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
     }
 }
