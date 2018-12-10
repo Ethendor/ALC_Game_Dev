@@ -91,10 +91,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3
-        width: 246
-        height: 296
+        width: 242
+        height: 297
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -114,7 +114,7 @@ TextureImporter:
         width: 13
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: alien thing_walk_2
       rect:
         serializedVersion: 2
-        x: 248
+        x: 255
         y: 5
-        width: 247
-        height: 294
+        width: 238
+        height: 295
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,12 +149,12 @@ TextureImporter:
       name: alien thing_walk_3
       rect:
         serializedVersion: 2
-        x: 493
+        x: 510
         y: 1
-        width: 248
+        width: 231
         height: 299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
