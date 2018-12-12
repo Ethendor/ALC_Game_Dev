@@ -3544,6 +3544,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   grounded: 0
+  animator: {fileID: 1393811978}
 --- !u!95 &1393811978
 Animator:
   serializedVersion: 3
@@ -4345,8 +4346,8 @@ Transform:
   - {fileID: 90992561}
   - {fileID: 1969319183}
   - {fileID: 964358687}
-  - {fileID: 270837608}
   - {fileID: 2056747788}
+  - {fileID: 270837608}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
