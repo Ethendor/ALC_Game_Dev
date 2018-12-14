@@ -25,8 +25,8 @@ public class CharacterMovement : MonoBehaviour
     // Use this for initialization
     void Start() {
     // Animation Reset
-    animator.SetBool("IsWalking", false);
-    animator.SetBool("IsJumping", false);
+    animator.SetBool("IsWalking",false);
+    animator.SetBool("IsJumping",false);
     }
 
 
@@ -61,22 +61,22 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetKey (KeyCode.D)){
             //  GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
             moveVelocity = MoveSpeed;
-            animator.SetBool("isWalking", true);
+            animator.SetBool("IsWalking",true);
         }
         
         else if (Input.GetKeyUp (KeyCode.D)){
-            animator.SetBool("isWalking", false);
+            animator.SetBool("IsWalking",false);
             }
 
 
         if(Input.GetKey (KeyCode.A)){
             //  GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
             moveVelocity = -MoveSpeed;
-            animator.SetBool("isWalking", true);
+            animator.SetBool("IsWalking",true);
         }
         
         else if (Input.GetKeyUp (KeyCode.A)){
-            animator.SetBool("isWalking", false);
+            animator.SetBool("IsWalking",false);
             }
 
 
